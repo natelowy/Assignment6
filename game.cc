@@ -23,8 +23,7 @@ namespace main_savitch_14
 
 /**
 * A normal member of the game class taking zero arguments
-* It plays one round of the
-* game, with the human player moving first and the computer second.
+* It plays one round of the game, with the human player moving first and the computer second.
 * The return value is the winner of the game (or NEUTRAL for a tie).
 *
 * @return game::who the winner of the game
