@@ -1,7 +1,10 @@
-// Brock Ferrell
-// CS2401
-// November 23, 2015
-// Project7
+///@file piece.h
+/** 
+* Brock Ferrell
+* CS2401
+* November 23, 2015
+* Project7
+*/
 
 #ifndef PIECE_H
 #define PIECE_H
@@ -24,7 +27,11 @@ public:
 	bool is_blank()const {return theColor == blank;}
 	bool is_black()const {return theColor == black;}
 	bool is_white()const {return theColor == white;}
-	void set_white() {theColor = white;}
+	/**Sets the piece color to white
+	*@param theColor
+	*@return Returns the value of theColor as color white
+	*/
+	void set_white(){theColor = white;}
 	void set_black() {theColor = black;}
 
 private:
