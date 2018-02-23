@@ -23,8 +23,7 @@ namespace main_savitch_14
 
 /**
 * A normal member of the game class taking zero arguments
-* It plays one round of the
-* game, with the human player moving first and the computer second.
+* It plays one round of the game, with the human player moving first and the computer second.
 * The return value is the winner of the game (or NEUTRAL for a tie).
 *
 * @return game::who the winner of the game
@@ -57,6 +56,15 @@ game::who game::play( )
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
+/*
+* A normal member of the game class that takes a const string message
+* passed by reference and it prints out the message to the console
+*
+* @param message a const string passed by reference
+*
+* @return void function
+*
+*/
 void game::display_message(const string& message) const
 {
 	cout << message;
@@ -136,6 +144,10 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 	// The answer we return should be from player's perspective, so multiply times -1:
 	return -best_value;
 }
+
+/**Decides the computer's move. Computes all possible moves, then recursively checks several stages 
+for the best move.
+*/
 
 void game::make_computer_move( )
 {
