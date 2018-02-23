@@ -57,6 +57,15 @@ game::who game::play( )
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
+/*
+* A normal member of the game class that takes a const string message
+* passed by reference and it prints out the message to the console
+*
+* @param message a const string passed by reference
+*
+* @return void function
+*
+*/
 void game::display_message(const string& message) const
 {
 	cout << message;
