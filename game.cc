@@ -56,7 +56,7 @@ game::who game::play( )
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
-/*
+/**
 * A normal member of the game class that takes a const string message
 * passed by reference and it prints out the message to the console
 *
@@ -182,10 +182,10 @@ void game::make_computer_move( )
 	make_move(best_move);
 }
 
-/** 
-*	Processes the user's move, rejecting invalid input.
-*	Takes no parameters.
-*	@return void
+/**
+* Processes the player's move, and rejects invalid moves.
+* Takes no parameters
+* @return void
 */
 void game::make_human_move( ) {
 	string move;
