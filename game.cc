@@ -146,7 +146,13 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 	return -best_value;
 }
 
+/**
+*
+
+*/
 void game::make_computer_move( )
+///Decides the computer's move. Computes all possible moves, then recursively checks several stages
+/// for the best move.
 {
 	queue<string> moves;
 	int value;

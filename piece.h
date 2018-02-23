@@ -1,5 +1,6 @@
 ///@file piece.h
 /** 
+* @brief This file contains both the header and implementations of the piece class.
 * Brock Ferrell
 * CS2401
 * November 23, 2015
