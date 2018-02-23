@@ -1,3 +1,7 @@
+/// @file game.cc
+/// @brief Contains implementation for the game class.
+/// @author Corbin Dotson, 
+
 // File: game.cxx
 
 #include <cassert>    // Provides assert
