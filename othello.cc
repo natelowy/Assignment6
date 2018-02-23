@@ -3,11 +3,37 @@
 // November 23, 2015
 // Project7
 
+/**
+* @file othello.cc
+*
+* @brief This file contains the implementation for the Othello class
+*
+* Description: The othello class contains all the functions needed to define
+*	       a game of Othello. This class is used by the game class. In fact
+* 	       Othello is a child class of the parent class game.
+*
+* @author Brock Ferrell
+*
+* Made for: CS2401
+* Date: November 23, 2015
+* Assignment: Project 7
+*
+*
+*/
+
 #include "othello.h"
 
 namespace main_savitch_14
 {
 
+/**
+* Function: display_status() const
+*
+* A normal member of the Othello class that has no arguments. It
+* prints the othello board to the console in a stylized manner
+*
+* @return This function is void
+*/
 void Othello::display_status()const
 {
   cout << BLUE << "   _______ _______ _______ _______ _______ _______ _______ _______\n";
