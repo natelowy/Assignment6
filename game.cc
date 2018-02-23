@@ -170,7 +170,11 @@ void game::make_computer_move( )
 	make_move(best_move);
 }
 
-/// Processes the user's move, rejecting invalid input. Takes no parameters.
+/** 
+*	Processes the user's move, rejecting invalid input.
+*	Takes no parameters.
+*	@return void
+*/
 void game::make_human_move( ) {
 	string move;
 
