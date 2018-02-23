@@ -1,3 +1,7 @@
+/// @file colors.h
+/// @brief Allows output text be be colored.
+/// @author Corbin Dotson
+
 //***********************************************************
 //
 //  File:     colors.h
