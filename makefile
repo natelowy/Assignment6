@@ -7,6 +7,9 @@ all: build clean
 build: main.o othello.o game.o
 	$(CC) $(CFLAGS) main.o othello.o game.o
 
+doc: main.cc othello.cc game.cc $(OTHELLO)
+	@doxygen
+
 main.o: main.cc $(OTHELLO)
 	$(CC) $(CFLAGS) -c main.cc
 
