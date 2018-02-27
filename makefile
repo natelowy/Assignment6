@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=-g -Wall
 OTHELLO=game.h piece.h colors.h
 
-all: build clean
+all: build clean doc
 
 build: main.o othello.o game.o
 	$(CC) $(CFLAGS) main.o othello.o game.o
