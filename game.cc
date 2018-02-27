@@ -1,6 +1,6 @@
 /// @file game.cc
 /// @brief Contains implementation for the game class.
-/// @author Corbin Dotson, 
+/// @author Corbin Dotson, Jordan Ball
 
 // File: game.cxx
 
