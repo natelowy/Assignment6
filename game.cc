@@ -70,6 +70,15 @@ void game::display_message(const string& message) const
 	cout << message;
 }
 
+/**
+* Function: string get_user_move() const;
+*
+* A member function of the game class. It interprets
+* the players move as a string and determines the piece
+* to flip
+*
+* @return This function returns the players move as a string
+*/
 string game::get_user_move( ) const
 {
 	string answer;
@@ -80,6 +89,16 @@ string game::get_user_move( ) const
 	return answer;
 }
 
+
+/**
+* Function: who winning() const;
+*
+* A member function of the game class. It counts black
+* and white spaces on the board and determines who 
+* has the most pieces
+*
+* @return This function returns the winning player
+*/
 game::who game::winning()const {
 
 	int value = evaluate();
@@ -97,6 +116,15 @@ game::who game::winning()const {
 //*************************************************************************
 // PRIVATE FUNCTIONS (these are the same for every game)
 
+/**
+* Function: int eval_with_lookahead(int, int);
+*
+* This function evaluates the board position. It determines
+* the best move for the computer to make by looking for the 
+* move that will take the most pieces
+*
+* @return This function returns the best move in an int
+*/
 int game::eval_with_lookahead(int look_ahead, int beat_this)
 // Evaluate a board position with lookahead.
 // --int look_aheads:  How deep the lookahead should go to evaluate the move.

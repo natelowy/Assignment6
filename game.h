@@ -1,5 +1,22 @@
 // File: game.h (part of the namespace main_savitch_14)
 
+/**
+* @file game.h
+*
+* @brief This file contains the header for the game class
+*
+* Description: The game class contains all the functions needed to define
+*	       a game of Othello. This class is the parent class for other
+*		   files that build a game of Othello.
+*
+* @author Brock Ferrell
+*
+* Made for: CS2401
+* Date: November 23, 2015
+* Assignment: Project 7
+*
+*
+*/
 
 #ifndef MAIN_SAVITCH_GAME
 #define MAIN_SAVITCH_GAME
@@ -41,6 +58,16 @@ protected:
 	{ return (player == HUMAN) ? COMPUTER : HUMAN; }
 	virtual void countingPieces() = 0;
 	virtual void whosTurn() = 0;
+
+/**
+* Function: who winning() const;
+*
+* A member function of the game class. It counts black
+* and white spaces on the board and determines who 
+* has the most pieces
+*
+* @return This function returns the winning player
+*/
 	virtual who winning( ) const;
 
 	// *******************************************************************
